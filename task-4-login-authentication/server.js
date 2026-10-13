@@ -6,6 +6,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const SESSION_SECRET = process.env.SESSION_SECRET || 'local-development-only-change-this-secret';
 const USERS_FILE = path.join(__dirname, 'data', 'users.json');
 const SALT_ROUNDS = 10;
 
@@ -25,10 +26,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   session({
-    secret: 'oibsip-webdev-l2-task4-secret', // demo only — use env var in production
+    secret: SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    cookie: { maxAge: 1000 * 60 * 60 } // 1 hour
+    cookie: {
+      maxAge: 1000 * 60 * 60,
+      httpOnly: true,
+      sameSite: 'lax',
+      secure: process.env.NODE_ENV === 'production'
+    } // 1 hour
   })
 );
 
