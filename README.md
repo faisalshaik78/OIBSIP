@@ -1,41 +1,77 @@
-# Oasis Infobyte Internship Projects (OIBSIP)
+# OIBSIP — Web Development Projects
 
-A portfolio of web development tasks built with HTML5, CSS3, JavaScript, and Node.js as part of my internship practice.
+A collection of web development projects completed as part of my Oasis Infobyte internship practice. Built using HTML, CSS, JavaScript, and Node.js.
 
 ## Projects
 
-| Task | Project | Stack | Folder |
-|---|---|---|---|
-| 1 | Calculator | HTML, CSS Grid, vanilla JavaScript | [task-1-calculator](./task-1-calculator/) |
-| 2 | Marie Curie Tribute Page | HTML, CSS, responsive design | [task-2-tribute-page](./task-2-tribute-page/) |
-| 3 | To-Do Web App | HTML, CSS, JavaScript, localStorage | [task-3-todo-app](./task-3-todo-app/) |
-| 4 | Login & Registration System | Node.js, Express, sessions, bcrypt | [task-4-login-authentication](./task-4-login-authentication/) |
+### Task 1 — Calculator
+A browser-based calculator for basic arithmetic operations.
 
-## Run the projects
+**Technologies:** HTML5, CSS3, JavaScript
+
+[View project files](./task-1-calculator/)
+
+### Task 2 — Marie Curie Tribute Page
+A responsive tribute page featuring a biography, timeline, and notable quote.
+
+**Technologies:** HTML5, CSS3
+
+[View project files](./task-2-tribute-page/)
+
+### Task 3 — To-Do Web App
+A task manager to add, edit, complete, and delete tasks. Tasks are saved in browser storage.
+
+**Technologies:** HTML5, CSS3, JavaScript, localStorage
+
+[View project files](./task-3-todo-app/)
+
+### Task 4 — Login & Registration System
+A learning project demonstrating account registration, login validation, and a protected page.
+
+**Technologies:** HTML5, CSS3, JavaScript, Node.js, Express
+
+[View project files](./task-4-login-authentication/)
+
+## Getting Started
 
 ### Tasks 1–3
-Open the relevant task folder and launch its `index.html` in a modern browser. For the tribute page, an internet connection may be needed for web fonts and the Wikimedia Commons portrait.
+1. Open the project folder.
+2. Open `index.html` in a modern web browser.
+3. Try the features and resize the browser to check the responsive layout.
 
-### Task 4 — Login & Registration
-Install Node.js, then open a terminal in the Task 4 folder and run:
+### Task 4
+1. Install [Node.js](https://nodejs.org/).
+2. Open a terminal in `task-4-login-authentication`.
+3. Install the project dependencies and start the server:
 
-```bash
-npm install
-npm start
+   ```bash
+   npm install
+   npm start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+Use fictional test credentials only. Check the Task 4 README for any project-specific requirements.
+
+## Repository Structure
+
+```text
+OIBSIP/
+├── task-1-calculator/
+├── task-2-tribute-page/
+├── task-3-todo-app/
+└── task-4-login-authentication/
 ```
-
-Open [http://localhost:3000](http://localhost:3000). Register with a test username and a password containing at least 8 characters and 1 number. The server creates a local `data/users.json` file when first run; this data file should not be committed to GitHub.
-
-Set a strong `SESSION_SECRET` environment variable for a persistent session secret. This is a learning project, not a production-ready authentication service.
 
 ## Notes
 
-- The calculator uses event listeners and conditional logic rather than JavaScript `eval()`.
-- The to-do app saves tasks in the browser's localStorage.
-- The tribute page links to Wikimedia Commons for the portrait; attribution and license details are included with the image.
-- Task 4 hashes passwords with bcrypt and uses server-side sessions. For real deployment, add HTTPS, rate limiting, CSRF protections, secure production cookie settings, and a production database.
+- These projects are intended for learning and internship practice.
+- The Task 4 authentication project is a demonstration, not a production-ready security system. Do not use real passwords or sensitive information.
+- Check each project folder for its files and additional instructions.
 
 ## Author
 
-**Shaik Faisal**  
-GitHub: [faisalshaik78](https://github.com/faisalshaik78)
+**Shaik Faisal**
+
+- GitHub: [@faisalshaik78](https://github.com/faisalshaik78)
+- Repository: [OIBSIP](https://github.com/faisalshaik78/OIBSIP)
