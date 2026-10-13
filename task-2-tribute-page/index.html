@@ -1,13 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A tribute to Marie Curie, pioneering scientist and two-time Nobel laureate.">
-<title>Marie Curie — A Life of Discovery</title><link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marie Curie — Tribute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero"><nav><a href="../../">OIBSIP / TASK 2</a><span>TRIBUTE SERIES</span></nav><div class="hero-copy"><p class="eyebrow">SCIENCE · COURAGE · CURIOSITY</p><h1>Marie<br><em>Curie.</em></h1><p class="tagline">A life devoted to discovering what the world could not yet see.</p><a class="scroll-link" href="#story">Explore her story ↓</a></div><figure class="portrait"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marie_Curie_c1920.jpg" alt="Portrait of Marie Curie" onerror="this.style.display='none'"><figcaption>Marie Curie · Wikimedia Commons</figcaption></figure></header>
-<main id="story"><section class="intro"><p class="eyebrow">THE WOMAN BEHIND THE DISCOVERY</p><h2>Curiosity changed<br>the course of science.</h2><div class="bio"><p>Marie Skłodowska Curie was born in Warsaw in 1867, at a time when opportunities for women in higher education were sharply limited. Determined to continue learning, she eventually moved to Paris, where she studied physics and mathematics at the Sorbonne.</p><p>In Paris, she met physicist Pierre Curie. Their shared curiosity became a remarkable scientific partnership. Through painstaking experiments with radioactive materials, Marie helped establish radioactivity as a field of scientific study and investigated the unusual properties of uranium-bearing minerals.</p><p>Their research led to the identification of two new elements, polonium and radium. The work demanded patience and persistence: isolating tiny quantities of radioactive substances required years of careful laboratory effort under difficult conditions.</p><p>Marie Curie's achievements extended beyond the laboratory. During the First World War, she helped bring mobile X-ray units to medical teams, enabling doctors to examine wounded soldiers. Her legacy includes not only discoveries, but also a lasting example of determination, rigorous inquiry, and service to others.</p></div></section>
-<section class="timeline"><p class="eyebrow">MILESTONES</p><h2>A remarkable journey</h2><ol><li><span>1867</span><div><h3>A beginning in Warsaw</h3><p>Born Maria Skłodowska in Poland.</p></div></li><li><span>1891</span><div><h3>New chapter in Paris</h3><p>Begins studies at the Sorbonne.</p></div></li><li><span>1898</span><div><h3>New elements identified</h3><p>Marie and Pierre Curie announce polonium and radium.</p></div></li><li><span>1903</span><div><h3>First Nobel Prize</h3><p>Shares the Nobel Prize in Physics for research on radiation.</p></div></li><li><span>1911</span><div><h3>A second Nobel Prize</h3><p>Receives the Nobel Prize in Chemistry for her work on radium and polonium.</p></div></li><li><span>1914–18</span><div><h3>Science in service</h3><p>Supports wartime medical imaging with mobile X-ray units.</p></div></li></ol></section>
-<section class="quote"><p class="eyebrow">WORDS TO REMEMBER</p><blockquote>“Nothing in life is to be feared, it is only to be understood.”</blockquote><p>— Marie Curie</p></section></main><footer><p>Created for OIBSIP Task 2 · Educational tribute</p><p>Image source: <a href="https://commons.wikimedia.org/wiki/Category:Marie_Curie" target="_blank" rel="noreferrer">Wikimedia Commons</a>. Verify the specific file's license before redistribution.</p></footer>
-</body></html>
+
+<header>
+  <div class="hero">
+    <div>
+      <h1>Marie Curie</h1>
+      <p class="tagline">She followed an invisible light and changed how we see matter.</p>
+      <p class="dates">Warsaw, 1867 — Passy, 1934</p>
+    </div>
+    <figure class="portrait">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marie_Curie_c1920.jpg?width=700" alt="Portrait of Marie Curie, circa 1920" width="700" height="900" loading="eager">
+      <figcaption>Marie Curie, c. 1920. Photo via
+        <a href="https://commons.wikimedia.org/wiki/File:Marie_Curie_c1920.jpg">Wikimedia Commons</a> (public domain).</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+  <section id="bio">
+    <div class="wrap">
+      <h2>A life given to the unknown</h2>
+      <p>Maria Skłodowska was born in Warsaw at a time when Poland was under foreign rule and women were barred from university study. Her parents were teachers who valued learning above comfort, and she grew up believing that knowledge was something worth sacrificing for.</p>
+      <p>She worked as a governess to help pay for her sister's medical studies, then travelled to Paris in 1891 to enrol at the Sorbonne. She lived in a cold attic room, often forgot to eat, and still finished at the top of her class in physics, then earned a second degree in mathematics.</p>
+      <p>Together with her husband Pierre, she began studying the strange rays given off by uranium. Hours of patient, physically punishing work in a leaky shed led them to two new elements, polonium (named for her homeland) and radium. She coined the word "radioactivity" for the phenomenon and showed it came from within the atom itself, an idea that opened the door to modern physics.</p>
+      <p>Her life was not only triumph. Pierre's sudden death in 1906 left her a widow with two daughters, yet she took over his professorship and became the first woman to teach at the Sorbonne. During the First World War she helped equip vehicles with X-ray machines and drove to the front herself. She never patented her methods, believing science belonged to everyone. Her example still tells every student that curiosity and persistence can outlast any obstacle.</p>
+    </div>
+  </section>
+
+  <section id="quote">
+    <blockquote>
+      <p>Nothing in life is to be feared, it is only to be understood.</p>
+      <cite>Marie Curie</cite>
+    </blockquote>
+  </section>
+
+  <section id="timeline">
+    <div class="wrap">
+      <h2>Milestones</h2>
+      <ol class="timeline">
+        <li><span class="year">1867</span><p>Born Maria Skłodowska in Warsaw, the youngest of five children.</p></li>
+        <li><span class="year">1891</span><p>Moves to Paris to study physics and mathematics at the Sorbonne.</p></li>
+        <li><span class="year">1898</span><p>Announces the discovery of polonium and radium with Pierre Curie.</p></li>
+        <li><span class="year">1903</span><p>Shares the Nobel Prize in Physics with Pierre Curie and Henri Becquerel, becoming the first woman to win a Nobel.</p></li>
+        <li><span class="year">1906</span><p>After Pierre's death, becomes the first female professor at the Sorbonne.</p></li>
+        <li><span class="year">1911</span><p>Wins the Nobel Prize in Chemistry, the first person honoured in two scientific fields.</p></li>
+        <li><span class="year">1914–1918</span><p>Develops mobile X-ray units that help doctors treat wounded soldiers.</p></li>
+        <li><span class="year">1934</span><p>Dies of an illness linked to long-term radiation exposure, leaving a legacy that transformed science and medicine.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="wide">
+      <h2>Why she still matters</h2>
+      <div class="cards">
+        <article class="card"><h3>Two elements found</h3><p>Polonium and radium expanded the periodic table and proved that atoms are not unchanging.</p></article>
+        <article class="card"><h3>Two Nobel Prizes</h3><p>Physics in 1903 and Chemistry in 1911, in two different sciences.</p></article>
+        <article class="card"><h3>Medicine, front line</h3><p>Her mobile X-ray units brought imaging to field hospitals and her work underpins cancer radiotherapy.</p></article>
+        <article class="card"><h3>A door held open</h3><p>She trained researchers and founded the Radium Institutes in Paris and Warsaw, making space for women in science.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="legacy" class="legacy-section">
+    <div class="wrap legacy-wrap">
+      <div class="legacy-copy">
+        <p class="eyebrow">Legacy</p>
+        <h2>Science became more human because of her work</h2>
+        <p>Marie Curie showed that discovery is not only a matter of brilliance but of patience, discipline, and courage. Her research changed medicine, rewrote the understanding of matter, and made clear that the pursuit of knowledge can serve society in profound ways.</p>
+        <p>She remains a symbol of intellectual freedom: a woman who insisted on learning, even when the world told her she was not meant to belong in the laboratory.</p>
+      </div>
+      <div class="legacy-panel">
+        <p class="panel-label">Her enduring influence</p>
+        <ul>
+          <li>Founded new standards for scientific rigor and research</li>
+          <li>Helped launch modern cancer treatment through radioactive therapy</li>
+          <li>Inspired generations of women in mathematics, physics, and medicine</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Built as a tribute page. Facts paraphrased from <a href="https://www.britannica.com/biography/Marie-Curie">Britannica</a> and <a href="https://en.wikipedia.org/wiki/Marie_Curie">Wikipedia</a>.</p>
+</footer>
+
+</body>
+</html>
