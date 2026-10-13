@@ -19,7 +19,7 @@ A collection of beginner-friendly web development projects built with HTML5, CSS
 
 ## Project notes
 
-- The calculator uses a small expression parser rather than JavaScript `eval()`.
+- The calculator uses vanilla JavaScript event listeners and conditional logic without `eval()`.
 - The to-do app stores tasks in the browser's localStorage.
 - The authentication task is a **front-end learning demo only**. It is not secure enough for real users or production use because browser storage and client-side logic can be inspected or modified. Production authentication requires a trusted server, secure password hashing, HTTPS, and server-side sessions or tokens.
 - The tribute page is dedicated to Marie Curie and includes a link to Wikimedia Commons for image sourcing. Add an appropriately licensed image if desired and retain its attribution/license details.
